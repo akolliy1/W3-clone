@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="w3-container">
+        <h1>Responsive Design using W3 Framework</h1>
+    </div>
+    <nav class="w3-dark-grey w3-card position-sticky">
+        <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black"><i class="fa fa-home"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">HTML</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">CSS</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">JAVASCRIPT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">SQL</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">PHP</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">BOOTSTRAP</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">HOW TO</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">PYTHON</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black" onclick="w3.addStyle('#nav_tutorials','display','block')">MORE <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-right"><i class="fa fa-search"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-right"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-right">EXCERCISES <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-right">REFERENCES <i class="fa fa-caret-down"></i></a>
+        </div>
+    </nav>
+    <div w3-include-html="nav_tutorials.html"></div>
+    <div class="w3-sidebar w3-collapse" id="sidenav">
+        <div class="w3-light-grey" id="leftmenuinnerinner">
+            <!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+            <h2 class="left">Tutorial</h2>
+            <a target="_top" href="default.asp" class="active">AngularJS HOME</a>
+            <a target="_top" href="angular_intro.asp">AngularJS Intro</a>
+            <a target="_top" href="angular_expressions.asp">AngularJS Expressions</a>
+            <a target="_top" href="angular_modules.asp">AngularJS Modules</a>
+            <a target="_top" href="angular_directives.asp">AngularJS Directives</a>
+            <a target="_top" href="angular_model.asp">AngularJS Model</a>
+            <a target="_top" href="angular_databinding.asp">AngularJS Data Binding</a>
+            <a target="_top" href="angular_controllers.asp">AngularJS Controllers</a>
+            <a target="_top" href="angular_scopes.asp">AngularJS Scopes</a>
+            <a target="_top" href="angular_filters.asp">AngularJS Filters</a>
+            <a target="_top" href="angular_services.asp">AngularJS Services</a>
+            <a target="_top" href="angular_http.asp">AngularJS Http</a>
+            <a target="_top" href="angular_tables.asp">AngularJS Tables</a>
+            <a target="_top" href="angular_select.asp">AngularJS Select</a>
+            <a target="_top" href="angular_sql.asp">AngularJS SQL</a>
+            <a target="_top" href="angular_htmldom.asp">AngularJS DOM</a>
+            <a target="_top" href="angular_events.asp">AngularJS Events</a>
+            <a target="_top" href="angular_forms.asp">AngularJS Forms</a>
+            <a target="_top" href="angular_validation.asp">AngularJS Validation</a>
+            <a target="_top" href="angular_api.asp">AngularJS API</a>
+            <a target="_top" href="angular_w3css.asp">AngularJS W3.CSS</a>
+            <a target="_top" href="angular_includes.asp">AngularJS Includes</a>
+            <a target="_top" href="angular_animations.asp">AngularJS Animations</a>
+            <a target="_top" href="angular_routing.asp">AngularJS Routing</a>
+            <a target="_top" href="angular_application.asp">AngularJS Application</a>
+            <br>
+            <h2 class="left">Examples</h2>
+            <a target="_top" href="angular_examples.asp">AngularJS Examples</a>
+            <br>
+            <h2 class="left">Reference</h2>
+            <a target="_top" href="angular_ref_directives.asp">AngularJS Reference</a>
+            <br><br>
+        </div>
+    </div>
+    <div class="w3-main w3-light-grey" id="main">
+        <div class="w3-row w3-white">
+            <div class="w3-col l10 m12">
+                <div w3-include-html="Main.html"></div>
+            </div>
+            <div class="w3-col l2 m12">
+                <div w3-include-html="advert.html"></div>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+    w3.includeHTML();
+</script>
+</body>
+</html>
